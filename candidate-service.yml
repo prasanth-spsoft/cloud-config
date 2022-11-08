@@ -2,7 +2,7 @@ spring:
   data:
     mongodb:
       database: candidate-service
-      host: 192.168.29.136
+      host: localhost
       password: admin
       port: 27017
       username: admin
