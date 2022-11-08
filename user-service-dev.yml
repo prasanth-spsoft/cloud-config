@@ -1,0 +1,23 @@
+spring:
+  data:
+    mongodb:
+      database: user-service
+      host: 192.168.29.136
+      password: admin
+      port: 27017
+      username: admin
+      authentication-database: admin
+jwt:
+  secret: g1eOO8+OfSnul5MbKFsi/1UHSm5AMs2fpAKrpOWli3Q=
+  expirationDateInMs: 600000
+  refreshExpirationDateInMs: 600000
+        
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka:eureka@localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name} :${random.uuid}  
